@@ -21,7 +21,7 @@ void solution()
         int cur = pq.top().second;
         pq.pop();
 
-        if (dist[cur] < cost) continue; // ★ 이 줄 추가해야 double free 방지!
+        if (dist[cur] < cost) continue;
 
         for (int i = 0; i < vertex[cur].size(); i++)
         {
